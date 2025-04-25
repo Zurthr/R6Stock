@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/JetBrains+Mono" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>R6 Navbar</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-section">
+      <img src="assets/Nav logo.png" alt="R6 Stock Logo" class="logo" />
+    </div>
+
+    <nav class="nav-links">
+      <a href="#">HOME</a>
+      <a href="#">MARKETPLACE</a>
+      <a href="#">ABOUT US</a>
+      <a href="#">ESPORTS</a>
+    </nav>
+    <div>
+        <a href="#" class="login-btn">LOG IN</a>
+        <!-- <a href="#" class="regist-btn">REGISTER</a> -->
+    </div>
+  </header>
+  <div class="hero">
+        <div class="hero-img">
+            <img src="assets/Hero logo.png" alt="Hero Image" class="hero-image" />
+        </div>
+        <div class="btn-container">
+            <a class="hero-btn">LEARN MORE</a>
+            <a class="hero-btn">SIEGE X PACK</a>
+        </div>
+        <div class="hero-title">FEATURED HIGHLIGHT</div>
+        <div class="hero-feature">
+            <div class="feature hidden">
+                <img src="assets/images/siegexpack.png" alt="Featured Highlight" class="feature-image" />
+                <div class='feature-desc'>
+                    <h1>SIEGE X PACK</h1>
+                    <p>Get ready for <strong>Siege X</strong> with this <strong>premium</strong> bundle, a mark of recognition for those who witnessed the start of a <strong>new era</strong>! This <strong>limited time offer</strong> is only available until <strong>June 2025</strong>.
+                    </p>
+                    <a class="feature-btn">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="feature hidden" style="transition-delay:0.5s;">
+                <img src="assets/images/siegexpack.png" alt="Featured Highlight" class="feature-image" />
+                <div class='feature-desc'>
+                    <h1>SIEGE X PACK</h1>
+                    <p>Get ready for <strong>Siege X</strong> with this <strong>premium</strong> bundle, a mark of recognition for those who witnessed the start of a <strong>new era</strong>! This <strong>limited time offer</strong> is only available until <strong>June 2025</strong>.
+                    </p>
+                    <a class="feature-btn">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+        <div class="choose">
+        <div class="hero-title">CHOOSE US.</div></div>
+        <div class="hero-choose">
+            <div class="a1 hidden"><img src="assets/images/quick.png"></div>
+            <div class="a1 hidden" style="transition-delay:0.3s;"><img src="assets/images/Reputable.png"></div>
+            <div class="a1 hidden" style="transition-delay:0.5s;"><img src="assets/images/Rewarding.png"></div>
+            <div class="a1 hidden" style="transition-delay:0.7s;"><img src="assets/images/Cheap.png"></div>
+            <div class="a1 hidden">Quick</div>
+            <div class="a1 hidden" style="transition-delay:0.3s;">Rewarding</div>
+            <div class="a1 hidden" style="transition-delay:0.5s;">Reputable</div>
+            <div class="a1 hidden" style="transition-delay:0.7s;">Cheap</div>
+            <div class="a2 hidden">Quick deliveries and fast response times from our team</div>
+            <div class="a2 hidden" style="transition-delay:0.3s;">Regular giveaways and promotions for cheaper prices</div>
+            <div class="a2 hidden" style="transition-delay:0.5s;">Safe transactions with hundreds of reviews and positive responses</div>
+            <div class="a2 hidden" style="transition-delay:0.7s;">Guaranteed lower prices compared to average market prices</div>
+        </div>
+        <div class="hero-title">ABOUT R6STOCK</div>
+        <div class="hero-stats">
+          <div class="stats-image-container hidden">
+            <img src="assets/images/chart.png" alt="chart" class="stats-image" />
+          </div>
+          <div class="stats-text hidden" >
+            <div class="stat">
+              <img src="assets/images/Account.png" alt="Accounts Sold" class="stat-icon">
+              <div>
+                <h3>Accounts Sold</h3>
+                <p><span class="highlight">4522</span> Accounts</p>
+              </div>
+            </div>
+            <div class="stat">
+              <img src="assets/images/Diamond.png" alt="Average Rating" class="stat-icon">
+              <div>
+                <h3>Average Rating</h3>
+                <p><span class="highlight">4.7</span> Stars</p>
+              </div>
+            </div>
+            <div class="stat">
+              <img src="assets/images/User.png" alt="Average Rating" class="stat-icon">
+              <div>
+                <h3>Customers</h3>
+                <p><span class="highlight">+2000</span> Satisfied Customers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-title" style="margin-bottom:0.1vw;">PAY WITH</div>
+        <div class="hero-subtitle">we accept these payment methods</div>
+      
+      </div>
+  <footer>
+    <div class="marquee">
+      <div class="marquee-content">
+        <span>Fast Delivery</span>
+        <span>Safe Payments</span>
+        <span>Best Prices</span>
+        <span>Promos and Giveaways</span>
+        <span>24/7 Support</span>
+        <span>Fast Delivery</span>
+        <span>Safe Payments</span>
+        <span>Best Prices</span>
+        <span>Promos and Giveaways</span>
+        <span>24/7 Support</span>
+      </div>
+  </footer>
+
+        
+  </div>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
